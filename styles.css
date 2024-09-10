@@ -1,0 +1,484 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #003366;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+/* Style du header */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Effet parallax pour la section d'accueil */
+.parallax {
+    background-image: url('stethoscope-6497490_640.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 120px;
+    color: #fff;
+}
+
+.parallax .content {
+    text-align: center;
+    color: #fff;
+    background: rgba(159, 153, 153, 0.4); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.parallax h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.parallax p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        padding-top: 150px;
+    }
+
+    .parallax h2 {
+        font-size: 2.2rem;
+    }
+
+    .parallax p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Sections générales */
+section {
+    padding: 80px 20px;
+    margin-top: 80px;
+    padding-top: 120px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+section ul {
+    max-width: 800px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+section ul li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: #0077cc;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Effet responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .parallax h2 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+    .section {
+        flex-direction: column;
+        text-align: center;
+      }
+}
+
+/* Spécifique pour les petits écrans (410px - 444px) */
+@media (max-width: 444px) {
+    .parallax .content {
+        padding: 10px;
+    }
+
+    .parallax h2 {
+        font-size: 1.8rem;
+        margin: 0 10px;
+    }
+
+    .parallax p {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .parallax h2 {
+        font-size: 1.5rem;
+    }
+
+    .parallax p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Section Calculateur de Risque d'AVC */
+#risk-calculator {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#risk-calculator h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#risk-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#risk-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#risk-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#risk-form button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#risk-form button:hover {
+    background-color: #005fa3;
+}
+
+#risk-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+
+/* Section Quiz sur la Prévention des AVC */
+#stroke-quiz {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#stroke-quiz h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#quiz-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#quiz-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#quiz-form input {
+    margin-right: 10px;
+}
+
+#quiz-form button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#quiz-form button:hover {
+    background-color: #005fa3;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .parallax h2 {
+        font-size: 1.8rem;
+    }
+
+    .parallax p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+h1, h2 {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0066cc;
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .section.active {
+    opacity: 1;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  

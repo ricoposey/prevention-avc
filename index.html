@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prévention de l'AVC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prévention de l'AVC</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">Qu'est-ce que l'AVC ?</a></li>
+                <li><a href="#prevention">Prévention</a></li>
+                <li><a href="#signs">Signes de l'AVC</a></li>
+                <li><a href="#resources">Ressources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Effet parallax pour la section d'accueil -->
+    <section id="home" class="parallax">
+        <div class="content">
+            <h2 style="color: #fff;">Bienvenue sur notre plateforme de prévention de l'AVC</h2>
+            <p style="background-color: blue; color: #ffcc00;">Découvrez comment prévenir et reconnaître les signes d'un AVC.</p>
+        </div>
+    </section>
+
+    <!-- Section Qu'est-ce que l'AVC ? -->
+    <section class="section" id="about">
+        <h2>Qu'est-ce que l'AVC ?</h2>
+        <p>
+            Un Accident Vasculaire Cérébral (AVC) se produit lorsque l'apport sanguin vers une partie du cerveau est interrompu ou réduit, empêchant les tissus cérébraux de recevoir de l'oxygène et des nutriments. Il existe deux principaux types d'AVC :
+        </p>
+        <ul>
+            <li>AVC ischémique : causé par un caillot sanguin bloquant une artère du cerveau.</li>
+            <li>AVC hémorragique : provoqué par la rupture d'un vaisseau sanguin dans le cerveau.</li>
+        </ul>
+        <p>Il est crucial de réagir rapidement en cas d'AVC pour minimiser les dommages cérébraux et améliorer les chances de récupération.</p>
+    </section>
+
+    <!-- Section Prévention -->
+    <section class="section" id="prevention">
+        <h2>Prévention</h2>
+        <p>
+            Réduire les risques d'AVC est possible en adoptant un mode de vie sain. Voici quelques conseils pour prévenir les AVC :
+        </p>
+        <ul>
+            <li>Mangez équilibré : privilégiez les fruits, légumes et céréales complètes.</li>
+            <li>Faites de l'exercice régulièrement : au moins 30 minutes par jour.</li>
+            <li>Maintenez un poids santé et évitez le tabagisme.</li>
+            <li>Surveillez votre tension artérielle et contrôlez votre cholestérol.</li>
+            <li>Limitez la consommation d'alcool et de sel.</li>
+        </ul>
+    </section>
+
+    <!-- Section Quiz sur la Prévention des AVC -->
+<section class="section" id="stroke-quiz">
+    <h2>Testez vos connaissances sur la prévention des AVC</h2>
+    <form id="quiz-form">
+        <div class="quiz-question">
+            <p>1. Quel est le principal facteur de risque d'AVC ?</p>
+            <label for="q1-stress"><input type="radio" id="q1-stress" name="q1" value="0" required> Stress</label>
+            <label for="q1-hypertension"><input type="radio" id="q1-hypertension" name="q1" value="1"> Hypertension artérielle</label>
+            <label><input type="radio" name="q1" value="0"> Tabagisme</label>
+            <label><input type="radio" name="q1" value="0"> Alcool</label>
+        </div>
+        <div class="quiz-question">
+            <p>2. Quelle est une mesure importante pour prévenir les AVC ?</p>
+            <label><input type="radio" name="q2" value="1" required> Maintenir une alimentation équilibrée</label>
+            <label><input type="radio" name="q2" value="0"> Consommer beaucoup de sucre</label>
+            <label><input type="radio" name="q2" value="0"> Ignorer les signes précurseurs</label>
+            <label><input type="radio" name="q2" value="0"> Manger beaucoup de sel</label>
+        </div>
+        <div class="quiz-question">
+            <p>3. Quels sont les signes d'alerte d'un AVC ?</p>
+            <label><input type="radio" name="q3" value="1" required> Faiblesse soudaine d'un côté du corps, troubles de la parole</label>
+            <label><input type="radio" name="q3" value="0"> Maux de tête passagers</label>
+            <label><input type="radio" name="q3" value="0"> Fatigue générale</label>
+            <label><input type="radio" name="q3" value="0"> Douleurs abdominales</label>
+        </div>
+        <button type="submit">Soumettre</button>
+    </form>
+    <div id="quiz-result"></div>
+</section>
+
+
+    <!-- Section Signes de l'AVC -->
+    <section class="section" id="signs">
+        <h2>Signes de l'AVC</h2>
+        <p>
+            Il est essentiel de reconnaître rapidement les signes d'un AVC afin d'agir sans délai. Voici quelques signes avant-coureurs :
+        </p>
+        <ul>
+            <li>Faiblesse ou engourdissement soudain du visage, d'un bras ou d'une jambe, en particulier d'un côté du corps.</li>
+            <li>Confusion soudaine, difficultés à parler ou à comprendre.</li>
+            <li>Problèmes de vision dans un ou les deux yeux.</li>
+            <li>Difficulté à marcher, vertiges, perte d'équilibre ou de coordination.</li>
+            <li>Maux de tête sévères sans cause connue.</li>
+        </ul>
+        <p>Si vous observez l'un de ces signes, appelez immédiatement les secours.</p>
+    </section>
+
+    <!-- Section Ressources -->
+    <section class="section" id="resources">
+        <h2>Ressources</h2>
+        <p>
+            Consultez nos ressources pour en apprendre davantage sur la prévention et la gestion des AVC :
+        </p>
+        <ul>
+            <li><a href="guide-complet.html">Guide complet sur la prévention des AVC</a></li>
+            <li><a href="articles-sante.html">Articles de santé sur les AVC</a></li>
+            <li><a href="temoignages-etudes.html">Témoignages et études de cas</a></li>
+            <li><a href="organisations-soutien.html">Organisations et soutien pour les victimes d'AVC</a></li>
+        </ul>
+    </section>
+
+    <section class="section" id="risk-calculator">
+        <h2>Calculateur de Risque d'AVC</h2>
+        <form id="risk-form">
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required>
+    
+            <label for="weight">Poids (en kg) :</label>
+            <input type="number" id="weight" name="weight" required>
+    
+            <label for="blood-pressure">Pression artérielle (en mmHg) :</label>
+            <input type="number" id="blood-pressure" name="blood-pressure" required>
+    
+            <label for="cholesterol">Cholestérol (en mg/dL) :</label>
+            <input type="number" id="cholesterol" name="cholesterol" required>
+    
+            <button type="submit">Calculer le Risque</button>
+        </form>
+        <div id="risk-result"></div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>
+            Pour toute question ou demande d'information, n'hésitez pas à nous contacter via le formulaire ci-dessous :
+        </p>
+        <form action="https://formspree.io/projects/2557935870476811605" id="contact-form" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+        
+        
+    </section>
+
+    <footer>
+        <p>© 2024 Prévention de l'AVC. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

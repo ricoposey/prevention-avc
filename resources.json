@@ -1,0 +1,29 @@
+{
+    "resources": [
+        {
+            "title": "Guide sur l'AVC",
+            "description": "Un guide complet sur la prévention et les signes de l'AVC.",
+            "link": "https://example.com/guide-avc"
+        },
+        {
+            "title": "Prévention des AVC",
+            "description": "Conseils et stratégies pour réduire les risques d'AVC.",
+            "link": "https://example.com/prevention-avc"
+        },
+        {
+            "title": "Reconnaître un AVC",
+            "description": "Comment identifier les symptômes d'un AVC rapidement.",
+            "link": "https://example.com/symptomes-avc"
+        },
+        {
+            "title": "Que faire en cas d'AVC",
+            "description": "Les étapes à suivre si vous suspectez un AVC.",
+            "link": "https://example.com/que-faire-avc"
+        },
+        {
+            "title": "Ressources supplémentaires",
+            "description": "Liens vers d'autres ressources utiles sur les AVC.",
+            "link": "https://example.com/ressources-avc"
+        }
+    ]
+}
